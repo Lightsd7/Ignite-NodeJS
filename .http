@@ -1,0 +1,40 @@
+GET http://localhost:3333/todos
+username: Molina
+
+###
+POST http://localhost:3333/users
+content-type: application/json
+
+{
+  "name": "Raul",
+  "username": "Molina"
+}
+
+###
+POST http://localhost:3333/todos
+content-type: application/json
+username: Molina
+
+{
+  "title": "Nome da tarefa",
+  "deadline": "2022-04-18"
+}
+
+###
+PUT http://localhost:3333/todos/1120a497-1c1d-49ca-84ea-c8fd7b9c1f66
+content-type: application/json
+username: Molina
+
+{
+  "title": "Nome da tarefa atualizada 2",
+  "deadline": "2022-04-22"
+}
+
+###
+DELETE http://localhost:3333/todos/1120a497-1c1d-49ca-84ea-c8fd7b9c1f66
+content-type: application/json
+username: Molina
+
+{
+
+}
